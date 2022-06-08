@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0
+}
+
+body{
+    height:100vh;
+    background-color: rgb(186, 186, 226);
+    font-family: 'Orbitron', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: repeat(6,65px);
+    border:2px solid #47476b;
+    background-color: black;
+    padding:5px;
+  }
+
+  .btn{
+    border:0.5px solid black;
+    color:black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight:bold;
+  }
+  
+  .btn:hover{
+    filter:brightness(130%);
+    border:none;
+  }
+
+  .display{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align:end;
+    background-color: #b8c2cb;
+    border-radius:5px;
+    margin-bottom: 3px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .output {
+    padding-right:0.5rem;
+    font-weight: bold;
+    font-size:1.5rem;
+  }
+
+  .clear{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-color: rgb(221, 74, 74);
+  }
+
+  .zero{
+    grid-column: 1 / 3;
+    grid-row: 6 / -1;
+  }
+
+  .operator,.equal{
+    background-color: rgb(240, 179, 11);
+  }
+  
+  .number,.decimal{
+    background-color: #6d7e8f;
+  }
+
+  .bkspace{
+      background-color: darkgray;
+  }
